@@ -1,0 +1,75 @@
+@keyframes blinking-letter {
+    0% {
+        color: black;
+        text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+    }
+
+    10% {
+        color: black;
+        text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+    }
+
+    12% {
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #df008a, 0 0 30px #df008a, 0 0 40px #df008a, 0 0 50px #df008a, 0 0 60px #df008a, 0 0 70px #df008a;
+    }
+
+    14% {
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #df008a, 0 0 30px #df008a, 0 0 40px #df008a, 0 0 50px #df008a, 0 0 60px #df008a, 0 0 70px #df008a;
+    }
+
+    16% {
+        color: black;
+        text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+    }
+
+    18% {
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #df008a, 0 0 30px #df008a, 0 0 40px #df008a, 0 0 50px #df008a, 0 0 60px #df008a, 0 0 70px #df008a;
+    }
+
+    20% {
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #df008a, 0 0 30px #df008a, 0 0 40px #df008a, 0 0 50px #df008a, 0 0 60px #df008a, 0 0 70px #df008a;
+    }
+
+    22% {
+        color: black;
+        text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+    }
+
+    24% {
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #df008a, 0 0 30px #df008a, 0 0 40px #df008a, 0 0 50px #df008a, 0 0 60px #df008a, 0 0 70px #df008a;
+    }
+
+    98% {
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #df008a, 0 0 30px #df008a, 0 0 40px #df008a, 0 0 50px #df008a, 0 0 60px #df008a, 0 0 70px #df008a;
+    }
+
+    100% {
+        color: black;
+        text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+    }
+}
+
+@keyframes presentation {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+}
