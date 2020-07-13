@@ -18,8 +18,9 @@ body {
     background-image: url(/images/header-small.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 10%;
     background-attachment: fixed;
+    animation: bgimage linear 10s both;
 
     &__darker {
         position: relative;
@@ -60,13 +61,14 @@ body {
     &__presentation {
         position: absolute;
         top: 60%;
-        left: 20%;
-        right: 20%;
+        left: 10%;
+        right: 10%;
         text-align: center;
-        font-family: roboto;
+        letter-spacing: 8px;
+        font-family: Jacques Francois Shadow;
         font-size: 1.3rem;
         text-transform: uppercase;
-        background: -webkit-linear-gradient(45deg, #df00af, #0f79a3);
+        background: -webkit-linear-gradient(45deg, #df00af, #0f92a3);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -76,22 +78,22 @@ body {
 
         &--first {
             opacity: 0;
-            animation: presentation 8s linear both infinite;
+            animation: presentation 9s 1s linear both infinite;
         }
 
         &--second {
             opacity: 0;
-            animation: presentation 8s 2s linear both infinite;
+            animation: presentation 9s 3s linear both infinite;
         }
 
         &--third {
             opacity: 0;
-            animation: presentation 8s 4s linear both infinite;
+            animation: presentation 9s 5s linear both infinite;
         }
 
         &--fourth {
             opacity: 0;
-            animation: presentation 8s 6s linear both infinite;
+            animation: presentation 9s 7s linear both infinite;
         }
     }
 }

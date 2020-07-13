@@ -73,3 +73,13 @@
     }
 
 }
+
+@keyframes bgimage {
+    0% {
+        background-position: 50% 10%;
+    }
+
+    100% {
+        background-position: 50% 35%;
+    }
+}
