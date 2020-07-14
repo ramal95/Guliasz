@@ -1,26 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 10px;
-    font-family: 'Roboto';
-}
-
-body {
-    height: 300vh;
-}
+$color-text-shadow-1: #df008a;
+$color-text-shadow-2:#3fced3;
 
 .header {
     height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
     background-image: url(/images/header-small.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 10%;
     background-attachment: fixed;
     animation: bgimage linear 10s both;
+    overflow: hidden;
+
+    @media (min-width:1024px) {
+        background-image: url(/images/header.jpg);
+    }
 
     &__darker {
         position: relative;
@@ -31,19 +26,37 @@ body {
     &__nickname {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        max-width: 1920px;
+        margin: 0 auto;
         position: absolute;
         top: 50%;
         left: 10%;
         right: 10%;
-        transform: translate(0, -40%);
+        transform: translate(0, -50%);
         text-align: center;
     }
 
     &__letter {
         font-family: 'Jacques Francois Shadow';
         color: white;
-        font-size: 5rem;
-        text-shadow: 0 0 10px #fff, 0 0 20px #df008a, 0 0 30px #df008a, 0 0 40px #df008a, 0 0 50px #df008a, 0 0 60px #df008a, 0 0 70px #df008a;
+        font-size: 4rem;
+        text-shadow: 0 0 10px white, 0 0 20px $color-text-shadow-1, 0 0 30px $color-text-shadow-1, 0 0 40px $color-text-shadow-1, 0 0 50px $color-text-shadow-1, 0 0 60px $color-text-shadow-1, 0 0 70px $color-text-shadow-1;
+
+        @media (min-width:412px) {
+            font-size: 5rem;
+        }
+
+        @media (min-width:600px) {
+            font-size: 6rem;
+        }
+
+        @media (min-width:800px) {
+            font-size: 8rem;
+        }
+
+        // @media (min-width:1024px) {
+        //     font-size: 10rem;
+        // }
 
         &--first {
             animation: blinking-letter 2s ease both infinite;
@@ -64,17 +77,30 @@ body {
         left: 10%;
         right: 10%;
         text-align: center;
-        letter-spacing: 8px;
-        font-family: Jacques Francois Shadow;
-        font-size: 1.3rem;
+        letter-spacing: 5px;
+        font-size: 0.8rem;
+        font-family: 'Jacques Francois Shadow';
         text-transform: uppercase;
-        background: -webkit-linear-gradient(45deg, #df00af, #0f92a3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #428cd1f3;
+
+        // background: -webkit-linear-gradient(45deg, $color-text-shadow-1, $color-text-shadow-2);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        @media (min-width:412px) {
+            font-size: 1.2rem;
+        }
+
+        @media (min-width:600px) {
+            font-size: 1.5rem;
+        }
+
+        @media (min-width:800px) {
+            font-size: 1.8rem;
+        }
     }
 
     &__description {
-        margin-top: 20px;
+        margin-top: 2vh;
 
         &--first {
             opacity: 0;
