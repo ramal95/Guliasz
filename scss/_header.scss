@@ -1,23 +1,19 @@
-$color-text-shadow-1: #df008a;
-$color-text-shadow-2:#3fced3;
-
 .header {
     height: 100vh;
-    max-width: 1920px;
     margin: 0 auto;
     background-image: url(/images/header-small.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 10%;
+    background-position: 50% 40%;
     background-attachment: fixed;
-    animation: bgimage linear 10s both;
+    animation: bgimage linear 2s both;
     overflow: hidden;
 
     @media (min-width:1024px) {
         background-image: url(/images/header.jpg);
     }
 
-    &__darker {
+    &--darker {
         position: relative;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.6);
@@ -72,16 +68,12 @@ $color-text-shadow-2:#3fced3;
     }
 
     &__presentation {
-        position: absolute;
-        top: 60%;
-        left: 10%;
-        right: 10%;
-        text-align: center;
         letter-spacing: 5px;
         font-size: 0.8rem;
         font-family: 'Jacques Francois Shadow';
         text-transform: uppercase;
-        color: #428cd1f3;
+        color: $color-text-shadow-2;
+        // text-align: center;
 
         // background: -webkit-linear-gradient(45deg, $color-text-shadow-1, $color-text-shadow-2);
         // -webkit-background-clip: text;
@@ -101,6 +93,11 @@ $color-text-shadow-2:#3fced3;
 
     &__description {
         margin-top: 2vh;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        right: 10%;
+        text-align: center;
 
         &--first {
             opacity: 0;

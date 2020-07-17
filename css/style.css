@@ -10,152 +10,6 @@ html {
   font-family: 'Roboto';
 }
 
-body {
-  height: 300vh;
-  background-color: #0a0a0a;
-}
-
-.header {
-  height: 100vh;
-  max-width: 1920px;
-  margin: 0 auto;
-  background-image: url(/images/header-small.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 10%;
-  background-attachment: fixed;
-  -webkit-animation: bgimage linear 10s both;
-          animation: bgimage linear 10s both;
-  overflow: hidden;
-}
-
-@media (min-width: 1024px) {
-  .header {
-    background-image: url(/images/header.jpg);
-  }
-}
-
-.header__darker {
-  position: relative;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.header__nickname {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  max-width: 1920px;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  right: 10%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  text-align: center;
-}
-
-.header__letter {
-  font-family: 'Jacques Francois Shadow';
-  color: white;
-  font-size: 4rem;
-  text-shadow: 0 0 10px white, 0 0 20px #df008a, 0 0 30px #df008a, 0 0 40px #df008a, 0 0 50px #df008a, 0 0 60px #df008a, 0 0 70px #df008a;
-}
-
-@media (min-width: 412px) {
-  .header__letter {
-    font-size: 5rem;
-  }
-}
-
-@media (min-width: 600px) {
-  .header__letter {
-    font-size: 6rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .header__letter {
-    font-size: 8rem;
-  }
-}
-
-.header__letter--first {
-  -webkit-animation: blinking-letter 2s ease both infinite;
-          animation: blinking-letter 2s ease both infinite;
-}
-
-.header__letter--third {
-  -webkit-animation: blinking-letter 4s 1s linear both infinite;
-          animation: blinking-letter 4s 1s linear both infinite;
-}
-
-.header__letter--fifth {
-  -webkit-animation: blinking-letter .5s linear both infinite;
-          animation: blinking-letter .5s linear both infinite;
-}
-
-.header__presentation {
-  position: absolute;
-  top: 60%;
-  left: 10%;
-  right: 10%;
-  text-align: center;
-  letter-spacing: 5px;
-  font-size: 0.8rem;
-  font-family: 'Jacques Francois Shadow';
-  text-transform: uppercase;
-  color: #428cd1f3;
-}
-
-@media (min-width: 412px) {
-  .header__presentation {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 600px) {
-  .header__presentation {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .header__presentation {
-    font-size: 1.8rem;
-  }
-}
-
-.header__description {
-  margin-top: 2vh;
-}
-
-.header__description--first {
-  opacity: 0;
-  -webkit-animation: presentation 9s 1s linear both infinite;
-          animation: presentation 9s 1s linear both infinite;
-}
-
-.header__description--second {
-  opacity: 0;
-  -webkit-animation: presentation 9s 3s linear both infinite;
-          animation: presentation 9s 3s linear both infinite;
-}
-
-.header__description--third {
-  opacity: 0;
-  -webkit-animation: presentation 9s 5s linear both infinite;
-          animation: presentation 9s 5s linear both infinite;
-}
-
-.header__description--fourth {
-  opacity: 0;
-  -webkit-animation: presentation 9s 7s linear both infinite;
-          animation: presentation 9s 7s linear both infinite;
-}
-
 @-webkit-keyframes blinking-letter {
   0% {
     color: black;
@@ -280,21 +134,328 @@ body {
   }
 }
 
-@-webkit-keyframes bgimage {
-  0% {
-    background-position: 50% 10%;
-  }
-  100% {
-    background-position: 50% 40%;
+@-webkit-keyframes bgimage {}
+
+@keyframes bgimage {}.header {
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url(/images/header-small.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 40%;
+  background-attachment: fixed;
+  -webkit-animation: bgimage linear 2s both;
+          animation: bgimage linear 2s both;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    background-image: url(/images/header.jpg);
   }
 }
 
-@keyframes bgimage {
-  0% {
-    background-position: 50% 10%;
+.header--darker {
+  position: relative;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header__nickname {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  text-align: center;
+}
+
+.header__letter {
+  font-family: 'Jacques Francois Shadow';
+  color: white;
+  font-size: 4rem;
+  text-shadow: 0 0 10px white, 0 0 20px #df008a, 0 0 30px #df008a, 0 0 40px #df008a, 0 0 50px #df008a, 0 0 60px #df008a, 0 0 70px #df008a;
+}
+
+@media (min-width: 412px) {
+  .header__letter {
+    font-size: 5rem;
   }
-  100% {
-    background-position: 50% 40%;
+}
+
+@media (min-width: 600px) {
+  .header__letter {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .header__letter {
+    font-size: 8rem;
+  }
+}
+
+.header__letter--first {
+  -webkit-animation: blinking-letter 2s ease both infinite;
+          animation: blinking-letter 2s ease both infinite;
+}
+
+.header__letter--third {
+  -webkit-animation: blinking-letter 4s 1s linear both infinite;
+          animation: blinking-letter 4s 1s linear both infinite;
+}
+
+.header__letter--fifth {
+  -webkit-animation: blinking-letter .5s linear both infinite;
+          animation: blinking-letter .5s linear both infinite;
+}
+
+.header__presentation {
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+  font-family: 'Jacques Francois Shadow';
+  text-transform: uppercase;
+  color: #3fced3c0;
+}
+
+@media (min-width: 412px) {
+  .header__presentation {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .header__presentation {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .header__presentation {
+    font-size: 1.8rem;
+  }
+}
+
+.header__description {
+  margin-top: 2vh;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+}
+
+.header__description--first {
+  opacity: 0;
+  -webkit-animation: presentation 9s 1s linear both infinite;
+          animation: presentation 9s 1s linear both infinite;
+}
+
+.header__description--second {
+  opacity: 0;
+  -webkit-animation: presentation 9s 3s linear both infinite;
+          animation: presentation 9s 3s linear both infinite;
+}
+
+.header__description--third {
+  opacity: 0;
+  -webkit-animation: presentation 9s 5s linear both infinite;
+          animation: presentation 9s 5s linear both infinite;
+}
+
+.header__description--fourth {
+  opacity: 0;
+  -webkit-animation: presentation 9s 7s linear both infinite;
+          animation: presentation 9s 7s linear both infinite;
+}
+
+.section-youtube {
+  height: 100vh;
+  background-image: url(/images/section__youtube3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-youtube--darker {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-youtube__container {
+  padding-top: 10vh;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90%;
+      grid-template-columns: 90%;
+  -ms-grid-rows: 40% 40%;
+      grid-template-rows: 40% 40%;
+  row-gap: 5%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .section-youtube__container {
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
+    -ms-grid-rows: 60%;
+        grid-template-rows: 60%;
+    -webkit-column-gap: 3%;
+            column-gap: 3%;
+  }
+}
+
+@media (orientation: landscape) {
+  .section-youtube__container {
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
+    -ms-grid-rows: 60%;
+        grid-template-rows: 60%;
+    -webkit-column-gap: 3%;
+            column-gap: 3%;
+  }
+}
+
+.section-youtube__description {
+  padding: 10%;
+  border: 5px solid #df008a;
+  border-radius: 5%;
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #3fced3c0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .section-youtube__description:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0 0 10px #df008a, 0 0 20px #df008a, 0 0 30px #df008a;
+            box-shadow: 0 0 10px #df008a, 0 0 20px #df008a, 0 0 30px #df008a;
+  }
+}
+
+.section-youtube__content {
+  position: relative;
+  width: 100%;
+  border: 5px solid #3fced3c0;
+  border-radius: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .section-youtube__content:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0 0 10px #3fced3c0, 0 0 20px #3fced3c0, 0 0 30px #3fced3c0;
+            box-shadow: 0 0 10px #3fced3c0, 0 0 20px #3fced3c0, 0 0 30px #3fced3c0;
+  }
+}
+
+.section-youtube__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-twitch {
+  height: 100vh;
+  background-image: url(/images/section__twitch2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section-twitch--darker {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-twitch__container {
+  padding-top: 10vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  border: 3px solid green;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 1024px) {
+  .section-twitch__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.section-twitch__description {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  width: 90%;
+  border: 3px solid orange;
+  background-color: rgba(0, 0, 255, 0.171);
+}
+
+@media (min-width: 1024px) {
+  .section-twitch__description {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    height: 60%;
+  }
+}
+
+.section-twitch__content {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  width: 90%;
+  background-color: grey;
+}
+
+@media (min-width: 1024px) {
+  .section-twitch__content {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    height: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */

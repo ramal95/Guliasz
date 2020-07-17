@@ -75,11 +75,18 @@
 }
 
 @keyframes bgimage {
-    0% {
-        background-position: 50% 10%;
-    }
+    // 0% {
+    //     background-position: 50% 10%;
+    // }
 
-    100% {
-        background-position: 50% 40%;
-    }
+    // 100% {
+    //     background-position: 50% 40%;
+    // }
+    // 0% {
+    //     filter: blur(10px);
+    // }
+
+    // 100% {
+    //     filter: blur(0px);
+    // }
 }

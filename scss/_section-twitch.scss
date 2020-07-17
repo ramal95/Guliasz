@@ -1,0 +1,53 @@
+.section-twitch {
+    height: 100vh;
+    background-image: url(/images/section__twitch2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &--darker {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__container {
+        padding-top: 10vh;
+        max-width: 1920px;
+        margin: 0 auto;
+        border: 3px solid green;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        @media(min-width:1024px) {
+            flex-direction: row;
+        }
+    }
+
+    &__description {
+        flex-basis: 40%;
+        width: 90%;
+        border: 3px solid orange;
+        background-color: rgba(0, 0, 255, 0.171);
+
+        @media(min-width:1024px) {
+            flex-basis: 45%;
+            height: 60%;
+        }
+    }
+
+    &__content {
+        flex-basis: 40%;
+        width: 90%;
+        background-color: grey;
+
+        @media(min-width:1024px) {
+            flex-basis: 45%;
+            height: 60%;
+        }
+    }
+}

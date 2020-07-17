@@ -1,0 +1,89 @@
+.section-youtube {
+    height: 100vh;
+    // background-image: linear-gradient(90deg, #0a0a0ac2 0, $color-text-shadow-1 30%, $color-text-shadow-2 70%, #0a0a0ac2 100%);
+    background-image: url(/images/section__youtube3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    &--darker {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__container {
+        padding-top: 10vh;
+        width: 100%;
+        height: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 40% 40%;
+        row-gap: 5%;
+        align-content: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        @media (min-width:1024px) {
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 60%;
+            column-gap: 3%;
+        }
+
+        @media (orientation:landscape) {
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 60%;
+            column-gap: 3%;
+        }
+    }
+
+    &__description {
+        padding: 10%;
+        border: 5px solid $color-text-shadow-1;
+        border-radius: 5%;
+        font-size: 1.2rem;
+        text-align: justify;
+        // line-height: 150%;
+        color: $color-text-shadow-2;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        transition: 0.3s;
+        overflow: hidden;
+
+        &:hover {
+            @media (min-width:1024px) {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px $color-text-shadow-1, 0 0 20px $color-text-shadow-1, 0 0 30px $color-text-shadow-1;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        width: 100%;
+        // padding-bottom: 56.25%;
+        border: 5px solid $color-text-shadow-2;
+        border-radius: 5%;
+        transition: 0.3s;
+        overflow: hidden;
+
+        &:hover {
+            @media (min-width:1024px) {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px $color-text-shadow-2, 0 0 20px $color-text-shadow-2, 0 0 30px $color-text-shadow-2;
+            }
+        }
+    }
+
+    &__iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
